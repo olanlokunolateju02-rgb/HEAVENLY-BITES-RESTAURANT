@@ -1,0 +1,308 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            body{
+                background-color: #fff8e7;
+
+            }
+              /* hero-section */
+
+              .header-cont{
+                background: linear-gradient(to right, #3B1F14, #7A3E24, #3B1F14);
+                width: 100vw;
+                height: 80vh;
+                color: #fff;
+                position: relative;
+            }
+
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #1c1917;
+                padding: 20px 10%;
+                position: sticky;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 10;
+            }
+
+            .nav-links{
+                list-style: none;
+                display: flex;
+                gap: 35px;
+            }
+
+            .nav-links li a{
+                text-decoration: none;
+                color: #fff;
+                font-weight: 500;
+                font-size: 15px;
+            }
+
+            .nav-links li a:hover{
+                color: #000;
+                background-color: #fff;
+                padding: 10PX;
+            }
+
+            .Caption{
+                margin: 13% 10%;
+                text-align: center;
+                font-size: 1.2rem;
+                font-weight: 100;
+            }
+
+            .bg-special{
+                background-color: #fff9c4;
+                color: #333333 ;
+            }
+
+            /* PRODUCT GRID */
+            .products{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 25px;
+                padding: 40px;
+
+            }
+            
+            .product{
+                background: white;
+                border-radius: 18px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+                transition: transform 2s;
+            }
+
+            .product:hover{
+                transform: translateY(-5px);
+            }
+
+            .product img{
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+
+            .product h3{
+                margin: 10px 0;
+                font-size: 22px;
+            }
+
+            .product .price{
+                font-size: 18px;
+                color: #7a47ff;
+                margin-bottom: 12px;
+                font-weight: bold;
+            }
+
+            .product button{
+                background: #7a47ff;
+                color: white;
+                border: none;
+                padding: 10px 18px;
+                font-size: 16px;
+                border-radius: 12px;
+                cursor: pointer;
+                transition: 3s;
+            }
+
+            .product button:hover{
+                background: #5d32cc;
+            }
+
+             /* CART */
+             .cart{
+                background: white;
+                padding: 25px;
+                border-radius: 18px;
+                margin: 30px auto;
+                width: 90%;
+                max-width: 600px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            }
+
+            .cart h2{
+                text-align: center;
+                color: #7a47ff;
+            }
+
+            .cart-item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px 0;
+                border-bottom: 1px solid #eee;
+            }
+
+            .cart-item button{
+                background: #ff4f66;
+                border: none;
+                color: white;
+                padding: 6px 12px;
+                font-size: 14px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            .cart-item button:hover{
+                background: #cc3a4d;
+            }
+
+            #total{
+                font-size: 22px;
+                text-align: center;
+                padding: 15px 0;
+                font-weight: bold;
+                color: #7a47ff;
+            }
+
+            #buyBtn{
+                width: 100%;
+                padding: 14px;
+                font-size: 18px;
+                background: palevioletred;
+                color: white;
+                border: none;
+                border-radius: 14px;
+                cursor: pointer;
+                transition: 3s;
+            }
+            
+            .buyBtn:hover{
+                background: #0ea542;
+            }
+
+            .about{
+    background: #0a2540;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+footer{
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+
+            
+
+
+
+
+
+
+        </style>
+
+
+
+
+    </head>
+    <body>
+         <!--hero-section-->
+         <header class="header-cont">
+            <nav class="navbar">
+                <div class="logo">
+                    <h2>HEAVENLY BITES</h2>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#Menu">Menu</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#Book a Table">Book a Table</a></li>
+                </ul>
+            </nav>
+            <div class="Caption">
+                <h1><span class="bg-special">Delicious Food, Great memories</span>
+                where Great Food, and <span class="bg-special">Fresh Ingredients, Hospitality come together.</span></h1>
+            </div>
+        </header>
+
+        <!-- hero-section ends -->
+
+        <!-- Services section -->
+        <section class="services-cont">
+
+            <h2 class="section-heading">OUR MENU</h2>
+            <div class="section-heading-border"></div>
+
+        <h1>menu</h1>
+
+        <div class="products">
+            <div class="product">
+                <img src="imgchicken.jpg" width="200px" height="200px">
+                <h3>party rice with chicken</h3>
+                <p class="price">$25</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="imgbeef.jpg" width="200px" height="200px">
+                <h3>party rice with beef</h3>
+                <p class="price">$20</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="imgcroaker.jpg">
+                <h3>party rice with croaker</h3>
+                <p class="price">$30</p>
+                <button>Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src="imgshawarma.jpg" width="200px" height="200px">
+                <h3>shawarma</h3>
+                <p class="price">$25</p>
+                <button>Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src="imgdrinks.jpg" width="200px" height="200px">
+                <h3>Drinks</h3>
+                <p class="price">$5</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        
+
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <div id="total">Total: $0</div>
+            <button id="buyBtn">Buy Now</button>
+        </div>
+
+        <section class="about">
+            <h2> why choose us</h2>
+            <p>
+                Fresh & Quality Ingredients.
+                Delicious Meals, Excellent Service & Affordable price.
+            </p>
+        
+        </section>
+        
+        <footer>
+            <p>
+                ©2026 HEAVENLY BITES | All Rights Reserved 
+            </p>
+        </footer>
+        
+        
+
+
+
+    </body>
+</html>
